@@ -23,8 +23,8 @@ def main():
 
 def calc_sidebar():
 
-    st.header('Control Panel')
-    st.text('Seriously show me!!!')
+    st.sidebar.header('Control Panel')
+    st.sidebar.text('Seriously show me!!!')
 
     return None
 
