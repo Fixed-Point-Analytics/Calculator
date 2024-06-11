@@ -21,7 +21,7 @@ def main():
 
 #Sidebar
 
-def calc__sidebar():
+def calc_sidebar():
 
     st.sidebar.header('Sidebar')
     st.sidebar.subheader('Subheader')
