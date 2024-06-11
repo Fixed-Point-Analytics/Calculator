@@ -34,6 +34,10 @@ def calc_body():
 
     st.title('ROAS Calculator')
     st.text('Text')
-    
+
     return None
 
+# Run main()
+
+if __name__ == '__main__':
+    main()
