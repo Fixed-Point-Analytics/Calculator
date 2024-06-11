@@ -7,7 +7,7 @@ import datetime as dt
 #Initial page setup
 
 st.set_page_config(
-     page_title='Streamlit cheat sheet',
+     page_title='ROAS Calculator',
      layout="wide",
      initial_sidebar_state="expanded",
 )
@@ -23,11 +23,8 @@ def main():
 
 def calc_sidebar():
 
-    st.sidebar.header('Sidebar')
-    st.sidebar.subheader('Subheader')
-    st.sidebar.text('Text')
-    st.sidebar.markdown('__Install and import__')
-
+    st.header('Control Panel')
+    st.text('Seriously show me!!!')
 
     return None
 
@@ -35,11 +32,8 @@ def calc_sidebar():
 
 def calc_body():
 
-    st.title('Title')
-    st.header('Header')
-    st.subheader('Subheader')
+    st.title('ROAS Calculator')
     st.text('Text')
-    st.markdown('Markdown')
-
+    
     return None
 
