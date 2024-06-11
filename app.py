@@ -23,7 +23,7 @@ def main():
 
 def calc__sidebar():
 
-    st.sidebar.title('Sidebar')
+    st.sidebar.header('Sidebar')
     st.sidebar.subheader('Subheader')
     st.sidebar.text('Text')
     st.sidebar.markdown('Markdown')
