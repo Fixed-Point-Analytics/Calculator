@@ -1,5 +1,5 @@
 streamlit
 pandas
 numpy
-nvd3
+python-nvd3
 datetime
