@@ -40,10 +40,15 @@ def calc_sidebar():
 
 #Main body
 
-def calc_body():
+def calc_body(CostPerConversion, HaloPercent, StartDate, EndDate):
 
     st.title('ROAS Calculator')
     st.text('Text')
+
+    st.write("Cost per conversion: ", CostPerConversion)
+    st.write("Halo effect: ", HaloPercent)
+    st.write("Start date: ", StartDate)
+    st.write("End date: ", EndDate)
 
     
     return None
