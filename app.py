@@ -13,15 +13,15 @@ st.set_page_config(
 )
 
 def main():
-    calc_sidebar(CostPerConversion=0, HaloPercent=0, StartDate=dt.date.today(), EndDate=dt.date.today())
-    calc_body(CostPerConversion=0, HaloPercent=0, StartDate=dt.date.today(), EndDate=dt.date.today())
+    calc_sidebar()
+    calc_body()
 
     return None
 
 
 #Sidebar
 
-def calc_sidebar(CostPerConversion, HaloPercent, StartDate, EndDate):
+def calc_sidebar():
 
     st.sidebar.header('Control Panel')
     st.sidebar.text('Seriously show me!!!')
@@ -36,16 +36,16 @@ def calc_sidebar(CostPerConversion, HaloPercent, StartDate, EndDate):
     st.write("End date: ", EndDate)
 
 
-    return CostPerConversion, HaloPercent, StartDate, EndDate
+    return None
 
 #Main body
 
-def calc_body(CostPerConversion, HaloPercent, StartDate, EndDate):
+def calc_body():
 
     st.title('ROAS Calculator')
     st.text('Text')
-
-    st.write("Cost per conversion: ", CostPerConversion)
+    
+    st.write("Cost per conversion: ", {CostPerConversion})
     st.write("Halo effect: ", HaloPercent)
     st.write("Start date: ", StartDate)
     st.write("End date: ", EndDate)
