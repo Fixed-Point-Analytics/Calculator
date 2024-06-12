@@ -25,6 +25,11 @@ def calc_sidebar():
 
     st.sidebar.header('Control Panel')
     st.sidebar.text('Seriously show me!!!')
+    CostPerConversion = st.sidebar.number_input('Enter the estimated cost per conversion or enrollment', value=0)
+    HaloPercent = st.sidebar.number_input('Enter in the estimated halo effect as a percentage', value=0)
+    StartDate = st.sidebar.date_input('Enter the start date of the campaign', value=dt.date.today())
+    EndDate = st.sidebar.date_input('Enter the end date of the campaign', value=dt.date.today())
+
 
     return None
 
