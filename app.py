@@ -30,6 +30,11 @@ def calc_sidebar():
     StartDate = st.sidebar.date_input('Enter the start date of the campaign', value=dt.date.today())
     EndDate = st.sidebar.date_input('Enter the end date of the campaign', value=dt.date.today())
 
+    st.write("Cost per conversion: ", CostPerConversion)
+    st.write("Halo effect: ", HaloPercent)
+    st.write("Start date: ", StartDate)
+    st.write("End date: ", EndDate)
+
 
     return None
 
@@ -40,11 +45,7 @@ def calc_body():
     st.title('ROAS Calculator')
     st.text('Text')
 
-    st.write("Cost per conversion: ", CostPerConversion)
-    st.write("Halo effect: ", HaloPercent)
-    st.write("Start date: ", StartDate)
-    st.write("End date: ", EndDate)
-
+    
     return None
 
 # Run main()
