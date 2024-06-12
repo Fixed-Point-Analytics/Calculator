@@ -21,7 +21,7 @@ def main():
 
 #Sidebar
 
-def calc_sidebar():
+def calc_sidebar(CostPerConversion, HaloPercent, StartDate, EndDate):
 
     st.sidebar.header('Control Panel')
     st.sidebar.text('Seriously show me!!!')
