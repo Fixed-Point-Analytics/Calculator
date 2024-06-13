@@ -36,14 +36,9 @@ def calc_sidebar():
     st.write("End date: ", EndDate)
 
 
-    return CostPerConversion, HaloPercent, StartDate, EndDate
+    return None
 
 #Main body
-
-st.write("Cost per conversion: ", CostPerConversion)
-st.write("Halo effect: ", HaloPercent)
-st.write("Start date: ", StartDate)
-st.write("End date: ", EndDate)
 
 def calc_body():
 
