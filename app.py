@@ -45,10 +45,10 @@ def calc_body():
     st.title('ROAS Calculator')
     st.text('Text')
     
-    st.write("Cost per conversion: {CostPerConversion}")
-    st.write("Halo effect:  {HaloPercent}")
-    st.write("Start date:  {StartDate}")
-    st.write("End date:  {EndDate}")
+    st.write(f"Cost per conversion: {st.sidebar.CostPerConversion}")
+    st.write(f"Halo effect:  {st.sidebar.HaloPercent}")
+    st.write(f"Start date:  {st.sidebar.StartDate}")
+    st.write(f"End date:  {st.sidebar.EndDate}")
 
     
     return None
