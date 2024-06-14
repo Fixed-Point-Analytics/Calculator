@@ -51,7 +51,7 @@ def calc_body(CostPerConversion, HaloPercent, StartDate, EndDate):
     st.write("End date:  ",EndDate)
 
     
-    return None
+    return CostPerConversion, HaloPercent, StartDate, EndDate
 
 # Run main()
 
