@@ -14,44 +14,33 @@ st.set_page_config(
 
 def main():
     calc_sidebar()
-    calc_body(CostPerConversion=0, HaloPercent=0, StartDate=dt.date.today(), EndDate=dt.date.today())
 
     return None
 
 
 #Sidebar
+st.sidebar.header('Control Panel')
+st.sidebar.text('Seriously show me!!!')
+CostPerConversion = st.sidebar.number_input('Enter the estimated cost per conversion or enrollment', value=0)
+HaloPercent = st.sidebar.number_input('Enter in the estimated halo effect as a percentage', value=0)
+StartDate = st.sidebar.date_input('Enter the start date of the campaign', value=dt.date.today())
+EndDate = st.sidebar.date_input('Enter the end date of the campaign', value=dt.date.today())
 
-def calc_sidebar():
-
-    st.sidebar.header('Control Panel')
-    st.sidebar.text('Seriously show me!!!')
-    CostPerConversion = st.sidebar.number_input('Enter the estimated cost per conversion or enrollment', value=0)
-    HaloPercent = st.sidebar.number_input('Enter in the estimated halo effect as a percentage', value=0)
-    StartDate = st.sidebar.date_input('Enter the start date of the campaign', value=dt.date.today())
-    EndDate = st.sidebar.date_input('Enter the end date of the campaign', value=dt.date.today())
-
-    st.write("Cost per conversion: ", CostPerConversion)
-    st.write("Halo effect: ", HaloPercent)
-    st.write("Start date: ", StartDate)
-    st.write("End date: ", EndDate)
-
-
-    return CostPerConversion, HaloPercent, StartDate, EndDate
+st.write("Cost per conversion: ", CostPerConversion)
+st.write("Halo effect: ", HaloPercent)
+st.write("Start date: ", StartDate)
+st.write("End date: ", EndDate)
 
 #Main body
 
-def calc_body(CostPerConversion, HaloPercent, StartDate, EndDate):
-
-    st.title('ROAS Calculator')
-    st.text('Text')
+st.title('ROAS Calculator')
+st.text('Text')
     
-    st.write(f"Cost per conversion: ",CostPerConversion)
-    st.write(f"Halo effect:  ",HaloPercent)
-    st.write(f"Start date:  ",StartDate)
-    st.write(f"End date:  ",EndDate)
+st.write(f"Cost per conversion: {CostPerConversion}")
+st.write("Halo effect:  ",HaloPercent)
+st.write("Start date:  ",StartDate)
+st.write("End date:  ",EndDate)
 
-    
-    return CostPerConversion, HaloPercent, StartDate, EndDate
 
 # Run main()
 
