@@ -35,9 +35,3 @@ st.write(f"Cost per conversion: {CostPerConversion}")
 st.write("Halo effect:  ",HaloPercent)
 st.write("Start date:  ",StartDate)
 st.write("End date:  ",EndDate)
-
-
-# Run main()
-
-if __name__ == '__main__':
-    main()
