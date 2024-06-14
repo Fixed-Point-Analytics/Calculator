@@ -21,6 +21,14 @@ HaloPercent = st.sidebar.number_input('Enter in the estimated halo effect as a p
 StartDate = st.sidebar.date_input('Enter the start date of the campaign', value=dt.date.today())
 EndDate = st.sidebar.date_input('Enter the end date of the campaign', value=dt.date.today())
 
+#File upload
+uploaded_file = st.sidebar.file_uploader("Upload your file here...", type=['csv'])
+
+if uploaded_file is not None:
+    dataframe = pd.read_csv(uploaded_file)
+	st.write(dataframe)
+
+
 #Main body
 st.title('ROAS Calculator')
 st.text('Text')
@@ -29,3 +37,4 @@ st.write(f"Cost per conversion: {CostPerConversion}")
 st.write(f"Halo effect:  ",HaloPercent)
 st.write(f"Start date:  ",StartDate)
 st.write(f"End date:  ",EndDate)
+st.write(f"Data:  ",data.info())
