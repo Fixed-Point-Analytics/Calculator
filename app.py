@@ -26,6 +26,12 @@ uploaded_file = st.sidebar.file_uploader("Upload your file here...", type={'csv'
 
 if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
+    else:
+        data = pd.DataFrame({
+        'A' : [1, 2, 3, 4],
+        'B' : [10, 20, 30, 40],
+        'C' : [100, 200, 300, 400]
+    })
 
 #Main body
 st.title('ROAS Calculator')
@@ -35,4 +41,4 @@ st.write(f"Cost per conversion: {CostPerConversion}")
 st.write(f"Halo effect:  ",HaloPercent)
 st.write(f"Start date:  ",StartDate)
 st.write(f"End date:  ",EndDate)
-st.write(f"Data:  ",data)
+st.write(data)
