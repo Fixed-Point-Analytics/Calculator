@@ -26,7 +26,7 @@ uploaded_file = st.sidebar.file_uploader("Upload your file here...", type={'csv'
 
 if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
-    else:
+else:
         data = pd.DataFrame({
         'A' : [1, 2, 3, 4],
         'B' : [10, 20, 30, 40],
