@@ -22,7 +22,7 @@ StartDate = st.sidebar.date_input('Enter the start date of the campaign', value=
 EndDate = st.sidebar.date_input('Enter the end date of the campaign', value=dt.date.today())
 
 #File upload
-uploaded_file = st.sidebar.file_uploader("Upload your file here...", type=['csv'])
+uploaded_file = st.sidebar.file_uploader("Upload your file here...", type={'csv'})
 
 if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
