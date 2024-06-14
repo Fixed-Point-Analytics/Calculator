@@ -21,17 +21,11 @@ HaloPercent = st.sidebar.number_input('Enter in the estimated halo effect as a p
 StartDate = st.sidebar.date_input('Enter the start date of the campaign', value=dt.date.today())
 EndDate = st.sidebar.date_input('Enter the end date of the campaign', value=dt.date.today())
 
-st.write("Cost per conversion: ", CostPerConversion)
-st.write("Halo effect: ", HaloPercent)
-st.write("Start date: ", StartDate)
-st.write("End date: ", EndDate)
-
 #Main body
-
 st.title('ROAS Calculator')
 st.text('Text')
     
 st.write(f"Cost per conversion: {CostPerConversion}")
-st.write("Halo effect:  ",HaloPercent)
-st.write("Start date:  ",StartDate)
-st.write("End date:  ",EndDate)
+st.write(f"Halo effect:  ",HaloPercent)
+st.write(f"Start date:  ",StartDate)
+st.write(f"End date:  ",EndDate)
