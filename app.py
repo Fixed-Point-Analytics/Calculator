@@ -14,7 +14,7 @@ st.set_page_config(
 
 def main():
     calc_sidebar()
-    calc_body()
+    calc_body(CostPerConversion=0, HaloPercent=0, StartDate=dt.date.today(), EndDate=dt.date.today())
 
     return None
 
