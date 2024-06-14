@@ -36,7 +36,7 @@ def calc_sidebar():
     st.write("End date: ", EndDate)
 
 
-    return None
+    return CostPerConversion, HaloPercent, StartDate, EndDate
 
 #Main body
 
