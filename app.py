@@ -12,11 +12,6 @@ st.set_page_config(
      initial_sidebar_state="expanded",
 )
 
-def main():
-    calc_sidebar()
-
-    return None
-
 
 #Sidebar
 st.sidebar.header('Control Panel')
