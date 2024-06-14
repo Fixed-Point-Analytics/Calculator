@@ -25,9 +25,7 @@ EndDate = st.sidebar.date_input('Enter the end date of the campaign', value=dt.d
 uploaded_file = st.sidebar.file_uploader("Upload your file here...", type=['csv'])
 
 if uploaded_file is not None:
-    dataframe = pd.read_csv(uploaded_file)
-	st.write(dataframe)
-
+    data = pd.read_csv(uploaded_file)
 
 #Main body
 st.title('ROAS Calculator')
